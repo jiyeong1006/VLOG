@@ -1,0 +1,10 @@
+<h1>VLOG 상세 페이지</h1>
+<p>여기는 상세 내용이 들어갈 자리입니다.</p>
+
+<a th:href="@{'/post/delete'(id=${post.id})}" 
+   onclick="return confirm('정말 삭제할까요?');">
+    삭제
+</a>
+
+
+<a th:href="@{|/post/modify?id=${post.id}|}">수정</a>
